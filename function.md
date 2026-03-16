@@ -1,5 +1,9 @@
+
+```powershell
 function webcheck {
-    param([string]$Target)
+    param(
+        [string]$Target
+    )
 
     $script = "C:\Tools\webcheck.ps1"
 
@@ -11,3 +15,4 @@ function webcheck {
 }
 
 Set-Alias wc webcheck
+```
