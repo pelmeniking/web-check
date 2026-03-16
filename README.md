@@ -7,8 +7,12 @@
 <p id="bkmrk-copy-function-to-you">Copy function to your PowerShell Profile</p>
 <p id="bkmrk-example-1"><em>Example</em></p>
 <p id="bkmrk-microsoft.powershell"><code>Microsoft.PowerShell_profile.ps1</code></p>
-<pre id="bkmrk-function-webcheck-%7B-"><code class="language-powershell">function webcheck {
-    param([string]$Target)
+
+```powershell
+function webcheck {
+    param(
+        [string]$Target
+    )
 
     $script = "C:\Tools\webcheck.ps1"
 
@@ -16,8 +20,11 @@
         $Target = ([uri]$Target).Host
     }
 
-    &amp; $script -HostName $Target
+    & $script -HostName $Target
 }
+
+Set-Alias wc webcheck
+```
 
 Set-Alias wc webcheck</code></pre>
 <p id="bkmrk-save-the-profile.">Save the profile.</p>
