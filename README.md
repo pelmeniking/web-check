@@ -26,7 +26,7 @@ function webcheck {
 Set-Alias wc webcheck
 ```
 
-Set-Alias wc webcheck</code></pre>
+</code></pre>
 <p id="bkmrk-save-the-profile.">Save the profile.</p>
 <p id="bkmrk-%C2%A0"></p>
 <p id="bkmrk-after-adding-everyth">After adding everything you can use the command <code>wc</code> or <code>webcheck</code> followed by an adress to check the webseite.</p>
